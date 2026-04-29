@@ -46,10 +46,10 @@ For proper mathematical rendering, see the attached **`Floquet_Engineered.pdf`**
 - Full Qiskit scripts
 - 24-run raw statistics (JSON)
 - Analysis tools
-- LaTeX source + PDF
+- Technical note Floquet_Engineered PDF
 
 **Status:** Experimentally validated, statistically robust (24 runs), theoretically grounded.
-
+Reproduction requires Qiskit runtime, numpy and provided scripts.
 ---
 
 *“We engineered low-energy collective modes via Floquet driving and let the system do its deterministic thing.”*
