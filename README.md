@@ -53,3 +53,13 @@ Reproduction requires Qiskit runtime, numpy and provided scripts.
 ---
 
 *“We engineered low-energy collective modes via Floquet driving and let the system do its deterministic thing.”*
+
+## Airbus Quantum Challenge 2026 Submission
+
+**Hybrid Quantum Attractor Stabilisation of Taylor-Green Vortex Dynamics**  
+[PDF Submission]()
+
+- Real hardware results on IBM Kingston & Fez  
+- +14.8% sustained kinetic energy growth  
+- −65% enstrophy reduction (strong large-scale vortex coherence)  
+- Full code and notebooks: [hybrid_taylor_green.html](hybrid_taylor_green.html)
