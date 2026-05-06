@@ -63,3 +63,34 @@ Reproduction requires Qiskit runtime, numpy and provided scripts.
 - +14.8% sustained kinetic energy growth  
 - −65% enstrophy reduction (strong large-scale vortex coherence)  
 - Full code and notebooks: [hybrid_taylor_green.html](hybrid_taylor_green.html)
+
+- # 3D-Informed Quantum-Classical Hybrid Fluid Dynamics
+
+**Quantum-enhanced turbulence control using IBM superconducting processors**
+
+## Overview
+
+This repository contains a hybrid quantum-classical framework for simulating and controlling three-dimensional incompressible turbulent flows. The system combines a classical pseudo-spectral Navier–Stokes solver with periodic quantum corrections executed on IBM Quantum hardware (ibm_fez, ibm_kingston, ibm_marrakesh).
+
+The quantum component uses measurement statistics from a fixed 16-qubit attractor circuit to inject energy and vorticity, with injection strengths guided by high-enstrophy windows identified in a 3D Gross–Pitaevskii BEC proxy.
+
+## Key Results (ibm_fez run)
+
+- Final Kinetic Energy: **2.81** (started from 0.25)
+- Maximum Enstrophy: **4.04**
+- Mean absolute dissipation rate: **~1.70**
+
+The hybrid system demonstrates sustained growth of kinetic energy and enstrophy with low net dissipation compared to equivalent classical simulations at the same viscosity (ν = 0.00012).
+
+## Repository Contents
+
+- `hybrid_quantum_fluid_v16.py` – Main simulation script
+- `tgv_metrics_v16.json` – Full metrics from the Fez run
+- `summary_plot.png` – KE, Enstrophy, and dissipation rate plots
+- `README.md` – This file
+
+## How to Run
+
+```bash
+pip install qiskit qiskit-ibm-runtime numpy scipy matplotlib
+python hybrid_quantum_fluid_v16.py
