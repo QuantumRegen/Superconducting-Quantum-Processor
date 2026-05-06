@@ -84,10 +84,8 @@ The hybrid system demonstrates sustained growth of kinetic energy and enstrophy 
 
 ## Repository Contents
 
-- `hybrid_quantum_fluid_v16.py` – Main simulation script
+- `floquet_3d_tgv.ipynb` – Main simulation script and iterations
 - `tgv_metrics_v16.json` – Full metrics from the Fez run
-- `summary_plot.png` – KE, Enstrophy, and dissipation rate plots
-- `README.md` – This file
 
 ## How to Run
 
